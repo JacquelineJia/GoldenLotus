@@ -1,6 +1,6 @@
-# OrientalDanceTroupe.ca
-Website for Oriental Dance Troupe of Ottawa
+# goldenlotushealingandguidance.com.ca
+Website for Golden Lotus Healing and Guidance
 
-[Check it out!](http://www.OrientalDanceTroupe.ca)
+[Check it out!](goldenlotushealingandguidance.com)
 
 Built using ReactJS and NodeJS
