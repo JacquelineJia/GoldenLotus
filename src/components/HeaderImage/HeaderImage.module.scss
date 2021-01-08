@@ -1,9 +1,42 @@
 @import "../../styles/_colors";
 
+.container {
+  background-color: $green-blue-lightest;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  font-size: large;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -300%);
+  white-space: nowrap;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bold;
+  transform: translate(-50%, -500%);
+}
+
+.tmp {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  letter-spacing: 0em;
+  transform: translate(-50%, -1000%);
+}
+
 .pageImage {
-  background: url("../../images/home-page-img.jpg");
+  background-image: url("../../images/home-page-img.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  height: 550px;
+  height: 100vh;
+  opacity: 0.70;
+  width: auto;
 }

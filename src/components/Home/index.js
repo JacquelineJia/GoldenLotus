@@ -9,13 +9,13 @@ class Home extends Component {
         <span className={style.aboutUsTitle}>
           <FormattedMessage
             id="components.home.title.aboutUs"
-            defaultMessage="About us"
+            defaultMessage="WELCOME!"
           />
         </span>
         <span className={style.aboutUsContent}>
           <FormattedMessage
             id="components.home.content.aboutUs"
-            defaultMessage="Established in 1988, Oriental Dance Troupe of Ottawa has the longest performing history of Chinese dance in national capital region."
+            defaultMessage=""
             values={{
               br: <span><br /><br /></span>,
             }}

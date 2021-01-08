@@ -10,20 +10,21 @@ class Footer extends Component {
           <span className={style.title}>
             <FormattedMessage
               id="components.footer.title.contactUs"
-              defaultMessage="Contact Us"
+              defaultMessage="CONTACT"
             />
           </span>
           <span>
-            dongfangwudaotuan@gmail.com
+            Want to learn more? Have any feedback or suggestions?
+            Get in touch!
           </span>
           <span>
-            (613) 864-6588
+            christopherakashic@gmail.com
           </span>
           {/* <div className="divider" /> */}
           <span className={style.copyright}>
             <FormattedMessage
               id="components.footer.copyright"
-              defaultMessage="© 2019 Oriental Dance Troupe of Ottawa"
+              defaultMessage="© 2020 Golden Lotus Healing and Guidance"
             />
           </span>
         </div>

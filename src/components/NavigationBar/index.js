@@ -17,11 +17,11 @@ class NavigationBar extends React.Component {
                 <Link to="/">
                   <FormattedMessage
                     id="components.navigationBar.menu.title"
-                    defaultMessage="Oriental Dance Troupe of Ottawa"
+                    defaultMessage="Golden Lotus Healing and Guidance"
                   />
                 </Link>
               </div>
-              {/* <span 
+              {/* <span
                 className={
                   this.isOpen('/about') ? style.pageOpen : null
                 }
@@ -53,7 +53,7 @@ class NavigationBar extends React.Component {
               />
             </span> */}
           </div>
-          <button 
+          {/*<button
               className={style.languageButton}
               onClick={() => this.props.onChangeLanguage()}
             >
@@ -61,7 +61,7 @@ class NavigationBar extends React.Component {
                 id="languageChange"
                 defaultMessage="English/中文"
               />
-            </button>
+            </button>*/}
         </div>
       </div>
     );

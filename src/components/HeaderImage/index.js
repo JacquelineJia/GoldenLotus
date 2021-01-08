@@ -9,7 +9,18 @@ class HeaderImage extends React.Component {
 
   render() {
     return (
-      <div className={style.pageImage} />
+      <div className={style.container}>
+        <div className={style.pageImage} />
+        <div className={`${style.text} ${style.tmp}`}>
+          Website under contruction
+        </div>
+        <div className={`${style.text} ${style.title}`}>
+          {"Explore and heal your soul path".toUpperCase()}
+        </div>
+        <div className={style.text}>
+          Akashic Consulting and Brennan Healing Science
+        </div>
+      </div>
     );
   }
 }

@@ -1,4 +1,3 @@
-$purple-blue: #3F51C1;
 $black: #000000;
 $dark-gray: #333333;
 $medium-gray: #565656;
@@ -8,6 +7,27 @@ $off-white: #F2F2F2;
 $snow: #F9F9F9;
 $white: #FFFFFF;
 
-$primary-color: $purple-blue;
+$green-yellow-lightest: #E3F0BB;
+$green-yellow-lighter: #CFE197;
+$green-yellow: #B0D248;
+$green-yellow-darker: #758C30;
+$green-yellow-darkest: #3B4618;
+
+$green-blue-lightest: #B8EBC8;
+$green-blue-lighter: #91D6A7;
+$green-blue: #44C26D;
+$green-blue-darker: #2D8149;
+$green-blue-darkest: #174124;
+
+$yellow-lightest: #FFFCC1;
+$yellow-lighter: #FFFBA2;
+$yellow: #FFF645;
+$yellow-darker: #AAA42E;
+$yellow-darkest: #555217;
+
+$red: #DE5021;
+
+$primary-color: $green-yellow;
 $primary-color-light: lighten($primary-color, 10%);
 $primary-color-dark: darken($primary-color, 10%);
+$secondary-color: $green-blue;

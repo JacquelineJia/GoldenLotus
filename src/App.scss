@@ -9,12 +9,14 @@ html, body, #root {
 }
 
 .app {
-  color: $dark-gray;
+  color: $black;
+  background-color: $green-yellow-lightest;
   display: flex;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   justify-content: space-between;
+  letter-spacing: 0.05em;
   line-height: 24px;
   text-align: left;
 }

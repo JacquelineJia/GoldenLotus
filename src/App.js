@@ -51,10 +51,10 @@ class App extends React.Component {
         <div className="app">
           <Helmet>
             <title>Oriental Dance Troupe of Ottawa</title>
-            <meta name="keywords" content="ottawa,oriental,dance,troupe,chinese,traditional,classical,odto,dongfangwudaotuan,渥太华东方舞蹈团,渥太华,东方舞蹈团"/>
-            <meta name="description" content="Established in 1988, Oriental Dance Troupe of Ottawa has the longest performing history of Chinese dance in national capital region."/>
-            <meta name="subject" content="Oriental Dance Troupe of Ottawa"/>
-            <meta name="copyright"content="Oriental Dance Troupe of Ottawa"/>
+            <meta name="keywords" content="Akashic Reading,Akashic Consulting,Brennan Healing Science,Spiritual Healing,Akashic Records"/>
+            <meta name="description" content="Akashic Consulting and Brennan Healing Science"/>
+            <meta name="subject" content="Golden Lotus Healing and Guidance"/>
+            <meta name="copyright"content="Golden Lotus Healing and Guidance"/>
             <meta name="language" content="EN"/>
           </Helmet>
           <Router>
