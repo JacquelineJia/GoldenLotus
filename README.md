@@ -1,6 +1,6 @@
 # goldenlotushealingandguidance.com.ca
 Website for Golden Lotus Healing and Guidance
 
-[Check it out!](goldenlotushealingandguidance.com)
+[Check it out!](www.goldenlotushealingandguidance.com)
 
 Built using ReactJS and NodeJS
