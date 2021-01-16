@@ -14,18 +14,19 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   justify-content: space-between;
   letter-spacing: 0.05em;
   line-height: 24px;
   text-align: left;
 }
 
+// don't know why but need this wraped around .appContentWidth
 .appPaddingWrapper {
   display: flex;
   justify-content: center;
-  padding-left: calc(5% + 40px);
-  padding-right: calc(5% + 40px);
+  padding-left: calc(10% + 40px);
+  padding-right: calc(10% + 40px);
   @media (max-width: 1023px) {
     padding-left: 40px;
     padding-right: 40px;
@@ -38,7 +39,7 @@ html, body, #root {
 
 .appContentWidth {
   margin: 0;
-  max-width: 1150px;
+  max-width: 1000px;
   width: 100%;
 }
 

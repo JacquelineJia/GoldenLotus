@@ -11,47 +11,53 @@ class NavigationBar extends React.Component {
     return (
       <div className={`${style.navBar} appPaddingWrapper`}>
         <div className={`${style.body} appContentWidth`}>
-          <div>
+          <div className={style.header}>
+            <div className={style.name}>
+              <Link to="/">
+                <FormattedMessage
+                  id="components.navigationBar.menu.title"
+                  defaultMessage="Golden Lotus Healing and Guidance"
+                />
+              </Link>
+            </div>
             <div className={style.menu}>
-              <div className={style.header}>
-                <Link to="/">
-                  <FormattedMessage
-                    id="components.navigationBar.menu.title"
-                    defaultMessage="Golden Lotus Healing and Guidance"
-                  />
-                </Link>
-              </div>
-              {/* <span
+              {/*<span
                 className={
-                  this.isOpen('/about') ? style.pageOpen : null
+                  this.isOpen('/learnMore') ? style.pageOpen : null
                 }
               >
-                <Link to="/about">
+                <Link to="/learn-more">
                   <FormattedMessage
-                    id="components.navigationBar.menu.about"
-                    defaultMessage="About"
+                    id="components.navigationBar.menu.learnMore"
+                    defaultMessage="Learn More"
                   />
                 </Link>
-              </span> */}
+              </span>*/}
+              <span
+                className={
+                  this.isOpen('/courses') ? style.pageOpen : null
+                }
+              >
+                <Link to="/courses">
+                  <FormattedMessage
+                    id="components.navigationBar.menu.courses"
+                    defaultMessage="Courses"
+                  />
+                </Link>
+              </span>
+              {/*<span
+                className={
+                  this.isOpen('/blog') ? style.pageOpen : null
+                }
+              >
+                <Link to="/blog">
+                  <FormattedMessage
+                    id="components.navigationBar.menu.blog"
+                    defaultMessage="Blog"
+                  />
+                </Link>
+              </span>*/}
             </div>
-            {/* <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.programs"
-                defaultMessage="Programs"
-              />
-            </span>
-            <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.contact"
-                defaultMessage="Contact"
-              />
-            </span>
-            <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.gallery"
-                defaultMessage="Gallery"
-              />
-            </span> */}
           </div>
           {/*<button
               className={style.languageButton}

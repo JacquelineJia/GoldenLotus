@@ -1,0 +1,69 @@
+@import "../../styles/_colors";
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.noMargin {
+  margin-block-end: 0.1em;
+  margin-block-start: 0.1em;
+}
+
+.table {
+  border-left: 2px solid $green-blue-darker;
+  border-right: 2px solid $green-blue-darker;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.table thead tr {
+  background-color: $green-blue-darker;
+  color: #ffffff;
+  text-align: center;
+}
+.table th,
+.table td {
+  border-left: 2px solid $green-blue-darker;
+  border-right: 2px solid $green-blue-darker;
+  padding: 12px 15px;
+}
+.table tbody tr {
+  background-color: $white;
+  // border-bottom: 1px solid $gray;
+}
+.table tbody tr:nth-child(even) {
+  background-color: $snow;
+}
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid $green-blue-darker;
+}
+.table tbody tr:hover {
+  background-color: $white-fadded;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: justify;
+
+  .title {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding-bottom: 1em;
+  }
+}

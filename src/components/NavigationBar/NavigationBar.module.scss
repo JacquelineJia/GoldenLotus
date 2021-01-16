@@ -4,59 +4,77 @@
   background-color: rgba($yellow-lighter, 0.85);
   box-sizing: border-box;
   color: $gray;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 30px;
   padding-top: 35px;
-  position: absolute;
+  // position: absolute;
+  /* TODO: i like postiion absolute here instead of relative but
+     need to fix the words on the header image */
   top: 0;
   width: 100%;
   z-index: 99;
+
+  @media (max-width: 1023px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    // position: relative;
+  }
 }
 
 .body{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1em;
 }
 
-.menu {
-  align-items: baseline;
+.header {
   display: flex;
-  flex-direction: row;
+  flex-grow: 1;
   flex-wrap: wrap;
-  // margin-bottom: 10px;
-  vertical-align: bottom;
-  .pageOpen {
-    color: $black;
-  }
-  .header {
+  justify-content: space-between;
+
+  .name {
     color: $black;
     cursor: pointer;
-    letter-spacing: 0.1em;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin-right: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25em;
+    margin-right: 25px;
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
   }
-  a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-  }
-  span {
-    color: $gray;
-    cursor: pointer;
-    margin-right: 30px;
-    white-space: nowrap;
-    &:hover {
+
+  .menu {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+    .pageOpen {
+      color: $black;
+    }
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+    span {
       color: $dark-gray;
-    }
-    &:last-child {
-      margin-right: 0;
+      cursor: pointer;
+      margin-right: 30px;
+      white-space: nowrap;
+      &:hover {
+        color: $black;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
-  // @media (max-width: 767px) {
-  // }
 }
 
 .languageButton {
@@ -65,13 +83,13 @@
   border: none;
   color: $black;
   cursor: pointer;
-  font-size: 14px;
-  // margin-top: 1em;
+  font-size: 16px;
+  margin-left: auto;
   max-height: 2em;
+  min-width: 65px;
   padding-left: 0.9em;
   padding-right: 0.9em;
-  // width: 65px;
   &:hover {
-    background-color: $off-white;
+    background-color: $white-slightly-fadded;
   }
 }

@@ -4,9 +4,11 @@ import { IntlProvider } from 'react-intl';
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 
 import About from './components/About';
+import Blog from './components/Blog';
+import Courses from './components/Courses';
 import Footer from './components/Footer';
-import HeaderImage from './components/HeaderImage';
 import Home from './components/Home';
+import LearnMore from './components/LearnMore';
 import NavigationBar from './components/NavigationBar';
 import logo from './logo.svg';
 import messages from './translations/messages';
@@ -50,7 +52,7 @@ class App extends React.Component {
       <IntlProvider {...i18nConfig}>
         <div className="app">
           <Helmet>
-            <title>Oriental Dance Troupe of Ottawa</title>
+            <title>Golden Lotus Healing and Guidance</title>
             <meta name="keywords" content="Akashic Reading,Akashic Consulting,Brennan Healing Science,Spiritual Healing,Akashic Records"/>
             <meta name="description" content="Akashic Consulting and Brennan Healing Science"/>
             <meta name="subject" content="Golden Lotus Healing and Guidance"/>
@@ -59,11 +61,12 @@ class App extends React.Component {
           </Helmet>
           <Router>
             <NavigationBar onChangeLanguage={this.onChangeLanguage} />
-            <HeaderImage />
-            <div className="appPaddingWrapper pageContent">
+            <div className="pageContent">
               <Switch>
                 <Route exact path="/" component={About} />
-                {/* <Route path="/about" component={About} /> */}
+                <Route path="/blog" component={Blog} />
+                <Route path="/courses" component={Courses} />
+                <Route path="/learn-more" component={LearnMore} />
                 <Redirect to="/" />
               </Switch>
             </div>

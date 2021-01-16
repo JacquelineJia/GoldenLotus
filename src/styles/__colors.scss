@@ -1,11 +1,14 @@
+$purple-blue: #3F51C1;
 $black: #000000;
 $dark-gray: #333333;
 $medium-gray: #565656;
 $gray: #979797;
 $light-gray: #BBBBBB;
-$off-white: #F2F2F2;
 $snow: #F9F9F9;
 $white: #FFFFFF;
+
+$white-slightly-fadded: fade-out($white, 0.1);
+$white-fadded: fade-out($white, 0.3);
 
 $green-yellow-lightest: #E3F0BB;
 $green-yellow-lighter: #CFE197;
@@ -30,4 +33,5 @@ $red: #DE5021;
 $primary-color: $green-yellow;
 $primary-color-light: lighten($primary-color, 10%);
 $primary-color-dark: darken($primary-color, 10%);
+$primary-color-fadded: fade-out($primary-color-light, 0.9);
 $secondary-color: $green-blue;
