@@ -18,13 +18,17 @@ class Footer extends Component {
             Get in touch!
           </span>
           <span>
-            christopherakashic@gmail.com
+            <a className={style.link} 
+              href="mailto:dongfangwudaotuan@gmail.com"
+              target="_blank">
+              christopherakashic@gmail.com
+            </a>
           </span>
           {/* <div className="divider" /> */}
           <span className={style.copyright}>
             <FormattedMessage
               id="components.footer.copyright"
-              defaultMessage="© 2020 Golden Lotus Healing and Guidance"
+              defaultMessage="© 2022 Golden Lotus Healing and Guidance"
             />
           </span>
         </div>

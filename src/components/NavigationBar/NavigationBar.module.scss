@@ -34,16 +34,22 @@
   justify-content: space-between;
 
   .name {
-    color: $black;
+    color: $dark-gray;
     cursor: pointer;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-bottom: 0.25em;
     margin-right: 25px;
+    .pageOpen {
+      color: $black;
+    }
     a, a:hover, a:focus, a:active {
       text-decoration: none;
       color: inherit;
+    }
+    &:hover {
+      color: $black;
     }
   }
 

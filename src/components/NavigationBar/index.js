@@ -5,52 +5,40 @@ import { Link, withRouter } from "react-router-dom";
 import style from './NavigationBar.module.scss';
 
 class NavigationBar extends React.Component {
-  isOpen = path => this.props.location.pathname === path;
-
   render() {
     return (
       <div className={`${style.navBar} appPaddingWrapper`}>
         <div className={`${style.body} appContentWidth`}>
           <div className={style.header}>
             <div className={style.name}>
-              <Link to="/">
-                <FormattedMessage
-                  id="components.navigationBar.menu.title"
-                  defaultMessage="Golden Lotus Healing and Guidance"
-                />
-              </Link>
+              <span className={this.props.linkIndex === 1 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(1)}>
+                  <FormattedMessage
+                    id="components.navigationBar.menu.title"
+                    defaultMessage="Golden Lotus Healing and Guidance"
+                  />
+                </a>
+              </span>
             </div>
             <div className={style.menu}>
-              {/*<span
-                className={
-                  this.isOpen('/learnMore') ? style.pageOpen : null
-                }
-              >
-                <Link to="/learn-more">
+              {/*<span className={this.props.linkIndex === 4 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(4)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.learnMore"
                     defaultMessage="Learn More"
                   />
-                </Link>
+                </a>
               </span>*/}
-              <span
-                className={
-                  this.isOpen('/courses') ? style.pageOpen : null
-                }
-              >
-                <Link to="/courses">
+              <span className={this.props.linkIndex === 3 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(3)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.courses"
                     defaultMessage="Courses"
                   />
-                </Link>
+                </a>
               </span>
-              {/*<span
-                className={
-                  this.isOpen('/blog') ? style.pageOpen : null
-                }
-              >
-                <Link to="/blog">
+              {/*<span className={this.props.linkIndex === 2 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(2)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.blog"
                     defaultMessage="Blog"
